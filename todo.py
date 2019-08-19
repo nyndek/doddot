@@ -56,7 +56,6 @@ def check_lines():
 
                         if '' in done_list:
                             done_list.remove('')
-
     except FileNotFoundError as err:
         print("Algum problema ao ler o arquivo {}".format(err.filename))
 
@@ -75,7 +74,6 @@ def task_list():
                 for item in range(todo_len):
                     print("\t[ ] {}".format(lines[0].split(',')[item]))
                 print('')
-
             else:
                 print('TODO:')
 
@@ -88,7 +86,6 @@ def task_list():
                 for item in range(doing_len):
                     print("\t[..] {}".format(lines[1].split(',')[item]))
                 print('')
-
             else:
                 print('DOING:')
 
@@ -101,10 +98,8 @@ def task_list():
                 for item in range(done_len):
                     print("\t[x] {}".format(lines[2].split(',')[item]))
                 print('')
-
             else:
                 print('DONE:')
-
     except FileNotFoundError:
         pass
 
@@ -157,7 +152,6 @@ def add_task(task):
 
             for i in range(len(done_list)):
                 data.write("{},".format(done_list[i]))
-
     except FileNotFoundError:
         pass
 
@@ -178,7 +172,6 @@ def move_task(task):
 
         if s_task in doing_list:
             doing_list.remove(s_task)
-
         elif s_task in done_list:
             done_list.remove(s_task)
 
@@ -194,7 +187,6 @@ def move_task(task):
 
         if s_task in todo_list:
             todo_list.remove(s_task)
-
         elif s_task in done_list:
             done_list.remove(s_task)
 
@@ -210,7 +202,6 @@ def move_task(task):
 
         if s_task in todo_list:
             todo_list.remove(s_task)
-
         elif s_task in doing_list:
             doing_list.remove(s_task)
 
@@ -228,7 +219,6 @@ def move_task(task):
 
             for i in range(len(done_list)):
                 data.write("{},".format(done_list[i]))
-
     except FileNotFoundError:
         pass
 
@@ -260,7 +250,6 @@ def delete_task(task_):
 
             for i in range(len(done_list)):
                 data.write("{},".format(done_list[i]))
-
     except FileNotFoundError:
         pass
 
@@ -273,7 +262,6 @@ def delete_all():
     try:
         with open('data/taskdb', 'w') as data:
             data.write('')
-
     except FileNotFoundError:
         pass
 
@@ -416,7 +404,6 @@ def main():
                     menu()
 
                     n = 10
-
             elif op == '2':
                 clear_screen()
                 help()
@@ -428,7 +415,6 @@ def main():
                     menu()
 
                     n = 10
-
             elif op == '3':
                 clear_screen()
                 about()
@@ -440,14 +426,14 @@ def main():
                     menu()
 
                     n = 10
-
             elif op == '4':
                 print("\nGood Bye! :)")
-                return False
 
+                return False
             else:
                 print('\nInvalid option! Choose one of the options above.')
                 print(';(')
+
                 return False
 
 
