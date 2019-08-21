@@ -1,6 +1,6 @@
 # TODO CLI
 
-A TODO app from command-line to organize projects tasks.
+A TODO app on command-line to organize projects tasks.
 
 ## Screenshots
 
