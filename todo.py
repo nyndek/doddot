@@ -348,7 +348,7 @@ def about():
     about_ = '''\
 +----------------------------------------------+
 | Name: TODO CLI                               |
-| Description: A TODO app on command line.   |
+| Description: A TODO app on command line.     |
 | Version: Undefined                           |
 | Author: Kennedy Allyson                      |
 | Email: kennedy01101@gmail.com                |
