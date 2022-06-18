@@ -4,8 +4,8 @@ A TODO app on command-line to organize projects tasks.
 
 ## Screenshots
 
-<img src="images/todo-cli.png" alt="menu">
-<img src="images/todo-cli2.png" alt="task-list">
+<img src="screenshots/todo-cli.png" alt="menu">
+<img src="screenshots/todo-cli2.png" alt="task-list">
 
 ## Prerequisites
 
