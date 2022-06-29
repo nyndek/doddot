@@ -1,5 +1,5 @@
 def menu_section():
-    menu_='''\
+    banner = """\
 ████████╗ ██████╗ ██████╗  ██████╗      ██████╗██╗     ██╗
 ╚══██╔══╝██╔═══██╗██╔══██╗██╔═══██╗    ██╔════╝██║     ██║
    ██║   ██║   ██║██║  ██║██║   ██║    ██║     ██║     ██║
@@ -16,12 +16,12 @@ def menu_section():
 [2] Help
 [3] About
 [4] Exit
-    '''
-    print(menu_)
+    """
+    print(banner)
 
 
 def task_section():
-    submenu_ = '''\
+    banner = """\
 
 
 
@@ -30,12 +30,12 @@ def task_section():
 [3] Delete task
 [4] Delete all tasks
 [5] Back to menu
-    '''
-    print(submenu_)
+    """
+    print(banner)
 
 
 def help_section():
-    help_ = '''\
+    banner = """\
 +==================   HOW TO USE   ====================+
 |                                                      |
 |------------------------------------------------------|
@@ -67,12 +67,12 @@ def help_section():
 
 
 [1] Back to menu
-    '''
-    print(help_)
+    """
+    print(banner)
 
 
 def about_section():
-    about_ = '''\
+    banner = """\
 +----------------------------------------------+
 | Name: TODO CLI                               |
 | Description: A TODO app on command line.     |
@@ -84,5 +84,5 @@ def about_section():
 
 
 [1] Back to menu
-    '''
-    print(about_)
+    """
+    print(banner)
