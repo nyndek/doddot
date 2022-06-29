@@ -1,12 +1,12 @@
 from commands import add_task, delete_all, delete_task, move_task, show_tasks
 from helpers import check_db, clear_screen, read_db
-from sections import about_section, help_section, menu_section, task_section
+from sections import about_section, help_section, home_section, task_section
 
 
 def main():
     check_db()
     read_db()
-    menu_section()
+    home_section()
     while True:
         option = input('[*] Option: ')
         number = 0
@@ -29,7 +29,7 @@ def main():
                     delete_all()
                 if sub_option == '5':
                     clear_screen()
-                    menu_section()
+                    home_section()
                     number = 10
             elif option == '2':
                 clear_screen()
@@ -37,7 +37,7 @@ def main():
                 sub_option = input('[*] Option: ')
                 if sub_option == '1':
                     clear_screen()
-                    menu_section()
+                    home_section()
                     number = 10
             elif option == '3':
                 clear_screen()
@@ -45,7 +45,7 @@ def main():
                 sub_option = input('[*] Option: ')
                 if sub_option == '1':
                     clear_screen()
-                    menu_section()
+                    home_section()
                     number = 10
             elif option == '4':
                 print('\nBye!')
