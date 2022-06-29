@@ -1,11 +1,11 @@
-from sections import menu_section, help_section, about_section, task_section
-from helpers import check_lines, check_path, clear_screen
-from commands import show_tasks, add_task, move_task, delete_task, delete_all
+from commands import add_task, delete_all, delete_task, move_task, show_tasks
+from helpers import check_db, clear_screen, read_db
+from sections import about_section, help_section, menu_section, task_section
 
 
 def main():
-    check_path()
-    check_lines()
+    check_db()
+    read_db()
     menu_section()
     while True:
         option = input('[*] Option: ')
