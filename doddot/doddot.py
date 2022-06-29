@@ -47,7 +47,7 @@ def main():
                     clear_screen()
                     home_section()
                     number = 10
-            elif option == '4':
+            elif option == '0':
                 print('\nBye!')
                 return False
             else:

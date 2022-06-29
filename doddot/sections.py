@@ -12,10 +12,10 @@ def home_section():
 
 
 
-[1] Tasks list
+[1] Tasks
 [2] Help
 [3] About
-[4] Exit
+[0] Exit
     """
     print(banner)
 
