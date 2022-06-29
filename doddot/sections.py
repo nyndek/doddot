@@ -66,7 +66,7 @@ def help_section():
 +------------------------------------------------------+
 
 
-[1] Back to menu
+[0] Back to Menu
     """
     print(banner)
 
