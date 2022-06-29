@@ -35,7 +35,7 @@ def main():
                 clear_screen()
                 help_section()
                 sub_option = input('[*] Option: ')
-                if sub_option == '1':
+                if sub_option == '0':
                     clear_screen()
                     home_section()
                     number = 10
@@ -43,7 +43,7 @@ def main():
                 clear_screen()
                 about_section()
                 sub_option = input('[*] Option: ')
-                if sub_option == '1':
+                if sub_option == '0':
                     clear_screen()
                     home_section()
                     number = 10
