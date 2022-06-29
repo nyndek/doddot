@@ -27,7 +27,7 @@ def main():
                     delete_task(task)
                 if sub_option == '4':
                     delete_all()
-                if sub_option == '5':
+                if sub_option == '0':
                     clear_screen()
                     home_section()
                     number = 10

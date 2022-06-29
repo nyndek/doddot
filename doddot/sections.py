@@ -25,11 +25,11 @@ def task_section():
 
 
 
-[1] Add task
-[2] Move task
-[3] Delete task
-[4] Delete all tasks
-[5] Back to menu
+[1] Add Task
+[2] Move Task
+[3] Delete Task
+[4] Empty All
+[0] Back to Menu
     """
     print(banner)
 
