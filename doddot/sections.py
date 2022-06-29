@@ -36,34 +36,27 @@ def task_section():
 
 def help_section():
     banner = """\
-+==================   HOW TO USE   ====================+
-|                                                      |
-|------------------------------------------------------|
-|                      ADD TASK                        |
-|                                                      |
-|~$ <task_name> <todo/doing/done>                      |
-|                                                      |
-|Example:                                              |
-|   [-] ~$ frontend todo                               |
-|------------------------------------------------------|
-|                      MOVE TASK                       |
-|                                                      |
-|~$ <task_name> <todo/doing/done>                      |
-|                                                      |
-|Example:                                              |
-|   [-] ~$ blog backend done                           |
-|                                                      |
-|NOTE: The task must already be added in some category.|
-|------------------------------------------------------|
-|                     DELETE TASK                      |
-|                                                      |
-|~$ <task_name>                                        |
-|                                                      |
-|Example:                                              |
-|  [-] ~$ frontend                                     |
-|                                                      |
-|NOTE: The task must already be added in some category.|
-+------------------------------------------------------+
++------------------------------------------------+
+|                   HOW TO USE                   |
++------------------------------------------------+
+| A͟D͟D͟ ͟T͟A͟S͟K͟                                       |
+|                                                |
+| ~$ <task> <category_name>                      |
+| e.g.: ~$ Improve the documentation todo        |
+| Note: The category name must be in lowercase   |
+|                                                |
+| M͟O͟V͟E͟ ͟T͟A͟S͟K͟                                      |
+|                                                |
+| ~$ <task> <category_name>                      |
+| e.g.: ~$ Remove deprecated modules done        |
+| Note: The task must belong to a category       |
+|                                                |
+| D͟E͟L͟E͟T͟E͟ ͟T͟A͟S͟K͟                                    |
+|                                                |
+| ~$ <task>                                      |
+| e.g.: ~$ Code review                           |
+| Note: The task must belong to a category       |
++------------------------------------------------+
 
 
 [0] Back to Menu
