@@ -66,14 +66,13 @@ def help_section():
 
 def about_section():
     banner = """\
-+----------------------------------------------+
-| Name: TODO CLI                               |
-| Description: A TODO app on command line.     |
-| Version: Undefined                           |
-| Author: Kennedy Allyson                      |
-| Email: kennedy01101@gmail.com                |
-| Github: kennedyallyson                       |
-+----------------------------------------------+
++---------------------------------------------------+
+| Name: Doddot                                      |
+| Version: 1.0.0                                    |
+| Description: To-Do CLI app to organize your tasks |
+| Author: Kennedy                                   |
+| Email: kennedy01101@gmail.com                     |
++---------------------------------------------------+
 
 
 [0] Back to Menu
