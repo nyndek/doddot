@@ -9,7 +9,7 @@ def clear_screen():
 
 def check_db():
     dirname = 'data/'
-    filename = 'taskdb'
+    filename = 'tasks.txt'
     fullpath = dirname + filename
     if not os.path.exists(dirname):
         os.mkdir(dirname)
@@ -20,7 +20,7 @@ def check_db():
 
 def read_db():
     try:
-        with open('data/taskdb', 'r+') as data:
+        with open('data/tasks.txt', 'r+') as data:
             lines = data.readlines()
             if len(lines) > 0:
                 todo_length = len(lines[0].split(','))
