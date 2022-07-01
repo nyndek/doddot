@@ -6,6 +6,7 @@ from sections import about_section, help_section, home_section, task_section
 def main():
     check_db()
     read_db()
+    clear_screen()
     home_section()
     while True:
         option = input('[*] Option: ')
