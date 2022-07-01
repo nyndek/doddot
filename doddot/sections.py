@@ -21,7 +21,6 @@ def task_section():
     banner = """\
 
 
-
 [1] Add Task
 [2] Move Task
 [3] Delete Task
