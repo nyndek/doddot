@@ -9,28 +9,28 @@ def show_tasks():
             lines = data.readlines()
             if len(lines) > 0:
                 todo_length = len(lines[0].split(',')) - 1
-                print('TODO:')
+                print('T͟O͟D͟O͟')
                 for item in range(todo_length):
-                    print('\t[ ] {}'.format(lines[0].split(',')[item]))
+                    print('    ☐  {}'.format(lines[0].split(',')[item]))
                 print('')
             else:
-                print('TODO:')
+                print('T͟O͟D͟O͟')
             if len(lines) > 1:
                 doing_length = len(lines[1].split(',')) - 1
-                print('DOING:')
+                print('D͟O͟I͟N͟G͟')
                 for item in range(doing_length):
-                    print('\t[..] {}'.format(lines[1].split(',')[item]))
+                    print('    ☒  {}'.format(lines[1].split(',')[item]))
                 print('')
             else:
-                print('DOING:')
+                print('D͟O͟I͟N͟G͟')
             if len(lines) > 2:
                 done_length = len(lines[2].split(',')) - 1
-                print('DONE:')
+                print('D͟O͟N͟E͟')
                 for item in range(done_length):
-                    print('\t[x] {}'.format(lines[2].split(',')[item]))
+                    print('    ☑  {}'.format(lines[2].split(',')[item]))
                 print('')
             else:
-                print('DONE:')
+                print('D͟O͟N͟E͟')
     except FileNotFoundError as err:
         print('An error has occurred: {}'.format(err.filename))
 
