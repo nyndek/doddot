@@ -1,7 +1,7 @@
 import os
 
-CURRENT_DIR = os.path.abspath(os.path.dirname(__file__))
-DATAPATH = os.path.abspath(os.path.join(CURRENT_DIR, '..', 'data'))
+FILEPATH = os.path.abspath(os.path.dirname(__file__))
+DATAPATH = os.path.abspath(os.path.join(FILEPATH, '..', 'data'))
 FILENAME = 'tasks.txt'
 FULLPATH = os.path.join(DATAPATH, FILENAME)
 
