@@ -1,6 +1,13 @@
 import os
 
-from commands import doing, done, todo
+CURRENT_DIR = os.path.abspath(os.path.dirname(__file__))
+DATAPATH = os.path.abspath(os.path.join(CURRENT_DIR, '..', 'data'))
+FILENAME = 'tasks.txt'
+FULLPATH = os.path.join(DATAPATH, FILENAME)
+
+todo = []
+doing = []
+done = []
 
 
 def clear_screen():
@@ -8,19 +15,13 @@ def clear_screen():
 
 
 def check_db():
-    dirname = 'data/'
-    filename = 'tasks.txt'
-    fullpath = dirname + filename
-    if not os.path.exists(dirname):
-        os.mkdir(dirname)
-    if not os.path.exists(fullpath):
-        with open(os.path.join(dirname, filename), 'x') as teste:
+    if not os.path.exists(DATAPATH):
+        os.mkdir(DATAPATH)
+    if not os.path.exists(FULLPATH):
+        with open(FULLPATH, 'x') as teste:
             pass
-
-
-def read_db():
     try:
-        with open('data/tasks.txt', 'r+') as data:
+        with open(FULLPATH, 'r+') as data:
             lines = data.readlines()
             if len(lines) > 0:
                 todo_length = len(lines[0].split(','))

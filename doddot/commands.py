@@ -1,11 +1,9 @@
-todo = []
-doing = []
-done = []
+from helpers import FULLPATH, doing, done, todo
 
 
 def show_tasks():
     try:
-        with open('data/tasks.txt', 'r') as data:
+        with open(FULLPATH, 'r') as data:
             lines = data.readlines()
             if len(lines) > 0:
                 todo_length = len(lines[0].split(',')) - 1
@@ -61,7 +59,7 @@ def add_task(text):
             task += words[i] + ' '
         done.append(task)
     try:
-        with open('data/tasks.txt', 'r+') as data:
+        with open(FULLPATH, 'r+') as data:
             for i in range(len(todo)):
                 data.write('{},'.format(todo[i]))
             data.write('\n')
@@ -112,7 +110,7 @@ def move_task(text):
             doing.remove(task)
         done.append(task)
     try:
-        with open('data/tasks.txt', 'w') as data:
+        with open(FULLPATH, 'w') as data:
             for i in range(len(todo)):
                 data.write('{},'.format(todo[i]))
             data.write('\n')
@@ -136,7 +134,7 @@ def delete_task(text):
     if task in done:
         done.remove(task)
     try:
-        with open('data/tasks.txt', 'w') as data:
+        with open(FULLPATH, 'w') as data:
             for i in range(len(todo)):
                 data.write('{},'.format(todo[i]))
             data.write('\n')
@@ -154,7 +152,7 @@ def delete_all():
     doing.clear()
     done.clear()
     try:
-        with open('data/tasks.txt', 'w') as data:
+        with open(FULLPATH, 'w') as data:
             data.write('')
     except FileNotFoundError as err:
         print('An error has occurred: {}'.format(err.filename))
