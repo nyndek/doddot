@@ -1,11 +1,10 @@
 from commands import add_task, delete_all, delete_task, move_task, show_tasks
-from helpers import check_db, clear_screen, read_db
+from helpers import check_db, clear_screen
 from sections import about_section, help_section, home_section, task_section
 
 
 def main():
     check_db()
-    read_db()
     clear_screen()
     home_section()
     while True:
