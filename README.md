@@ -4,8 +4,8 @@ To-Do CLI app to organize your tasks.
 
 ## Screenshots
 
-<img src="screenshots/todo-cli.png" alt="menu">
-<img src="screenshots/todo-cli2.png" alt="task-list">
+<img src="screenshots/doddot.png" alt="Doddot home">
+<img src="screenshots/doddot-1.png" alt="Doddot tasks">
 
 ## How to use?
 
