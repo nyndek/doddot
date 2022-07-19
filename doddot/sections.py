@@ -64,7 +64,7 @@ def about_section():
     banner = """\
 +---------------------------------------------------+
 | Name: Doddot                                      |
-| Version: 1.0.0                                    |
+| Version: 1.0.2                                    |
 | Description: To-Do CLI app to organize your tasks |
 | Author: Kennedy                                   |
 | Email: kennedy01101@gmail.com                     |
