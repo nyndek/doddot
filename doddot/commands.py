@@ -44,20 +44,22 @@ def add_task(text):
         for i in range(len(words)):
             task += words[i] + ' '
         todo.append(task)
-    if command == 'doing':
+    elif command == 'doing':
         words = text.split(' ')
         words.remove('doing')
         task = ''
         for i in range(len(words)):
             task += words[i] + ' '
         doing.append(task)
-    if command == 'done':
+    elif command == 'done':
         words = text.split(' ')
         words.remove('done')
         task = ''
         for i in range(len(words)):
             task += words[i] + ' '
         done.append(task)
+    else:
+        return
     try:
         with open(FULLPATH, 'r+') as data:
             for i in range(len(todo)):
@@ -86,6 +88,8 @@ def move_task(text):
             doing.remove(task)
         elif task in done:
             done.remove(task)
+        else:
+            return
         todo.append(task)
     if command == 'doing':
         words = text.split(' ')
@@ -97,6 +101,8 @@ def move_task(text):
             todo.remove(task)
         elif task in done:
             done.remove(task)
+        else:
+            return
         doing.append(task)
     if command == 'done':
         words = text.split(' ')
@@ -108,6 +114,8 @@ def move_task(text):
             todo.remove(task)
         elif task in doing:
             doing.remove(task)
+        else:
+            return
         done.append(task)
     try:
         with open(FULLPATH, 'w') as data:
