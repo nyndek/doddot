@@ -43,6 +43,12 @@ def add_task(text):
         task = ''
         for i in range(len(words)):
             task += words[i] + ' '
+        if task in todo:
+            return
+        if task in doing:
+            return
+        if task in done:
+            return
         todo.append(task)
     elif command == 'doing':
         words = text.split(' ')
@@ -50,6 +56,12 @@ def add_task(text):
         task = ''
         for i in range(len(words)):
             task += words[i] + ' '
+        if task in todo:
+            return
+        if task in doing:
+            return
+        if task in done:
+            return
         doing.append(task)
     elif command == 'done':
         words = text.split(' ')
@@ -57,6 +69,12 @@ def add_task(text):
         task = ''
         for i in range(len(words)):
             task += words[i] + ' '
+        if task in todo:
+            return
+        if task in doing:
+            return
+        if task in done:
+            return
         done.append(task)
     else:
         return
