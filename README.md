@@ -9,49 +9,35 @@ To-Do CLI app to organize your tasks.
 
 ## How to use?
 
-A task must belong to one of three categories: **TODO**, **DOING**, **DONE**.
+There are three categories: **TODO**, **DOING** e **DONE** and every task must belong to a category.
 
-### Add task
+### Add or Move
 
-To add a task:
+Use the following way to add or move a task:
 
 `~$ <task> <category_name>`
+
+***Note***: *The category name must be in lowercase*.
 
 Example:
 
 ```
-[-] ~$ Handle all exceptions todo
+[-] ~$ Update README.md todo
 ```
 
-***Note**: The category name must be in lowercase*.
+### Delete
 
-### Move task
-
-To move a task:
-
-`~$ <task> <category_name>`
-
-Example:
-
-```
-[-] ~$ Delete temporary files done
-```
-
-***Note**: The task must belong to a category*.
-
-### Delete task
-
-To delete a task:
+Use the following way to delete a task:
 
 `~$ <task>`
 
+***Note***: *The task must belong to a category*.
+
 Example:
 
 ```
-[-] ~$ Create .gitignore file
+[-] ~$ Remove deprecated modules
 ```
-
-***Note**: The task must belong to a category*.
 
 ## License
 
