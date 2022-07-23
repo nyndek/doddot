@@ -62,13 +62,13 @@ def help_section():
 
 def about_section():
     banner = """\
-+---------------------------------------------------+
-| Name: Doddot                                      |
-| Version: 1.0.2                                    |
-| Description: To-Do CLI app to organize your tasks |
-| Author: Kennedy                                   |
-| Email: kennedy01101@gmail.com                     |
-+---------------------------------------------------+
++---------------------------------------------------------+
+| Name: Doddot                                            |
+| Version: 1.0.2                                          |
+| Description: To-Do CLI application to manage your tasks |
+| Author: Kennedy                                         |
+| Email: kennedy01101@gmail.com                           |
++---------------------------------------------------------+
 
 
 [0] Back to Menu
