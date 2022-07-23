@@ -1,6 +1,6 @@
 # Doddot
 
-To-Do CLI app to organize your tasks.
+An application to manage your tasks easily from the command line.
 
 ## Screenshots
 
