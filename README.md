@@ -2,10 +2,9 @@
 
 An application to manage your tasks easily from the command line.
 
-## Screenshots
+## Screenshot
 
-<img src="screenshots/doddot.png" alt="Doddot home">
-<img src="screenshots/doddot-1.png" alt="Doddot tasks">
+<img src="screenshot/doddot.png" alt="Doddot screenshot">
 
 ## How to use?
 
