@@ -48,3 +48,16 @@ def check_db():
                             done.remove('')
     except FileNotFoundError as err:
         print('An error has occurred: {}'.format(err.filename))
+
+
+def menu():
+    banner = """\
+
+
+[1] Add Task
+[2] Move Task
+[3] Delete Task
+[4] Empty Tasks
+[0] Exit
+    """
+    print(banner)
