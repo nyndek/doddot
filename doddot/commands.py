@@ -9,7 +9,7 @@ def show_tasks():
                 todo_length = len(lines[0].split(',')) - 1
                 print('T͟O͟D͟O͟')
                 for item in range(todo_length):
-                    print('    ☐  {}'.format(lines[0].split(',')[item]))
+                    print('  [ ] {}'.format(lines[0].split(',')[item]))
                 print('')
             else:
                 print('T͟O͟D͟O͟')
@@ -17,7 +17,7 @@ def show_tasks():
                 doing_length = len(lines[1].split(',')) - 1
                 print('D͟O͟I͟N͟G͟')
                 for item in range(doing_length):
-                    print('    ☒  {}'.format(lines[1].split(',')[item]))
+                    print('  [-] {}'.format(lines[1].split(',')[item]))
                 print('')
             else:
                 print('D͟O͟I͟N͟G͟')
@@ -25,7 +25,7 @@ def show_tasks():
                 done_length = len(lines[2].split(',')) - 1
                 print('D͟O͟N͟E͟')
                 for item in range(done_length):
-                    print('    ☑  {}'.format(lines[2].split(',')[item]))
+                    print('  [x] {}'.format(lines[2].split(',')[item]))
                 print('')
             else:
                 print('D͟O͟N͟E͟')
@@ -173,7 +173,28 @@ def delete_task(text):
         print('An error has occurred: {}'.format(err.filename))
 
 
-def delete_all():
+def empty_category(category):
+    if category == 'todo':
+        todo.clear()
+    if category == 'doing':
+        doing.clear()
+    if category == 'done':
+        done.clear()
+    try:
+        with open(FULLPATH, 'w') as data:
+            for i in range(len(todo)):
+                data.write('{},'.format(todo[i]))
+            data.write('\n')
+            for i in range(len(doing)):
+                data.write('{},'.format(doing[i]))
+            data.write('\n')
+            for i in range(len(done)):
+                data.write('{},'.format(done[i]))
+    except FileNotFoundError as err:
+        print('An error has occurred: {}'.format(err.filename))
+
+
+def empty_tasks():
     todo.clear()
     doing.clear()
     done.clear()

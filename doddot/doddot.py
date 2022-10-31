@@ -1,4 +1,5 @@
-from commands import add_task, delete_all, delete_task, move_task, show_tasks
+from commands import (add_task, delete_task, empty_category, empty_tasks,
+                      move_task, show_tasks)
 from helpers import check_db, clear_screen, menu
 
 
@@ -10,18 +11,21 @@ def main():
         menu()
         option = input('[*] Option: ')
         if option == '1':
-            task = input('[-] ~$ ')
+            task = input('[*] ~$ ')
             add_task(task)
         if option == '2':
-            task = input('[-] ~$ ')
+            task = input('[*] ~$ ')
             move_task(task)
         if option == '3':
-            task = input('[-] ~$ ')
+            task = input('[*] ~$ ')
             delete_task(task)
         if option == '4':
-            delete_all()
+            category = input('[*] ~$ ')
+            empty_category(category)
+        if option == '5':
+            empty_tasks()
         if option == '0':
-            print('\nBye!')
+            print('Bye!')
             return False
 
 

@@ -57,7 +57,8 @@ def menu():
 [1] Add Task
 [2] Move Task
 [3] Delete Task
-[4] Empty Tasks
+[4] Empty Category
+[5] Empty Tasks
 [0] Exit
     """
     print(banner)
