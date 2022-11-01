@@ -2,15 +2,13 @@
 
 An application to manage your tasks easily from the command line.
 
-## Screenshot
-
 <img src="screenshot/doddot.png" alt="Doddot screenshot">
 
-## How to use?
+## Usage
 
 There are three categories: **TODO**, **DOING** e **DONE** and every task must belong to a category.
 
-### Add or Move
+## Add or Move task
 
 Use the following way to add or move a task:
 
@@ -21,10 +19,10 @@ Use the following way to add or move a task:
 Example:
 
 ```
-[-] ~$ Update README.md todo
+[*] ~$ Update README.md todo
 ```
 
-### Delete
+## Delete task
 
 Use the following way to delete a task:
 
@@ -35,7 +33,21 @@ Use the following way to delete a task:
 Example:
 
 ```
-[-] ~$ Remove deprecated modules
+[*] ~$ Remove deprecated modules
+```
+
+## Empty category
+
+Use the following way to empty a category:
+
+`~$ <category_name>`
+
+***Note***: *The category name must be in lowercase*.
+
+Example:
+
+```
+[*] ~$ done
 ```
 
 ## License
