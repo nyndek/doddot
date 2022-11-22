@@ -26,7 +26,6 @@ def show_tasks():
                 print('D͟O͟N͟E͟')
                 for item in range(done_length):
                     print('  [x] {}'.format(lines[2].split(',')[item]))
-                print('')
             else:
                 print('D͟O͟N͟E͟')
     except FileNotFoundError as err:

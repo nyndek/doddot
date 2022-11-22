@@ -51,8 +51,14 @@ def check_db():
 
 
 def menu():
+    print()
+    print()
+    print(
+        '({} todo · {} doing · {} done)'.format(
+            len(todo), len(doing), len(done)
+        )
+    )
     banner = """\
-
 
 [1] Add Task
 [2] Move Task
