@@ -1,5 +1,11 @@
-from commands import (add_task, delete_task, empty_category, empty_tasks,
-                      move_task, show_tasks)
+from commands import (
+    add_task,
+    delete_task,
+    empty_category,
+    empty_tasks,
+    move_task,
+    show_tasks,
+)
 from helpers import check_db, clear_screen, menu
 
 
