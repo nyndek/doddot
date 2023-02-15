@@ -52,4 +52,4 @@ Example:
 
 ## License
 
-This project is lincesed under [MIT License](LICENSE).
+This project is licensed under [MIT License](LICENSE).
